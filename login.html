@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>OAGF Internet Portal :: Login</title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="Gadget Sign Up Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
+    />
+    <script>
+      addEventListener(
+        'load',
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+    <!-- Meta tags -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//style sheet end here-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+      <input type="hidden" name="username" />
+      <input type="hidden" name="password" />
+      <input type="hidden" name="dst" value="$(link-orig)" />
+      <input type="hidden" name="popup" value="true" />
+    </form>
+
+    <script type="text/javascript" src="md5.js"></script>
+    <script type="text/javascript">
+      <!--
+      function doLogin() {
+        document.sendin.username.value = document.login.username.value;
+        document.sendin.password.value = hexMD5(
+          '$(chap-id)' + document.login.password.value + '$(chap-challenge)'
+        );
+        document.sendin.submit();
+        return false;
+      }
+      //-->
+    </script>
+    $(endif)
+    <!--<h1 class="error">OAGF Internet Portal</h1>-->
+    <!---728x90--->
+    <div
+      style="
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+        margin-top: 20px;
+      "
+    >
+      <img src="images/coa.jpg" width="100px" />
+    </div>
+    <!---728x90--->
+    <div class="w3layouts-two-grids">
+      <div class="mid-class">
+        <div class="img-right-side">
+          <h3>OAGF Internet Portal</h3>
+          <p>
+            Please login below to use the OAGF Internet Service. Refer all
+            related issues to the Office of the Director, Information
+            Technology.
+          </p>
+          <img src="images/b11.png" class="img-fluid" alt="" />
+        </div>
+        <div class="txt-left-side">
+          <h2>Sign in</h2>
+          $(if trial == 'yes')Free trial available,
+          <a
+            style="color: #ff8080"
+            href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"
+            >click here</a
+          >.$(endif)
+          <form
+            name="login"
+            action="$(link-login-only)"
+            method="post"
+            $(if
+            chap-id)
+            onSubmit="return doLogin()"
+            $(endif)
+          >
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+            <!--
+            <div class="form-left-to-w3l">
+              <span class="fa fa-user-o" aria-hidden="true"></span>
+              <input type="text" name="Name" placeholder=" Name" required="" />
+
+              <div class="clear"></div>
+            </div>
+            <div class="form-left-to-w3l">
+              <span class="fa fa-phone" aria-hidden="true"></span>
+              <input type="text" name="Phone" placeholder="Phone" required="" />
+
+              <div class="clear"></div>
+            </div>
+            -->
+            <div class="form-left-to-w3l">
+              <span class="fa fa-user-o" aria-hidden="true"></span>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                value="$(username)"
+              />
+
+              <div class="clear"></div>
+            </div>
+            <div class="form-left-to-w3l">
+              <span class="fa fa-lock" aria-hidden="true"></span>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required=""
+              />
+              <div class="clear"></div>
+            </div>
+            <div class="main-two-w3ls">
+              <div class="left-side-forget">
+                <input type="checkbox" class="checked" />
+                <span class="remenber-me">Remember me </span>
+              </div>
+              <div class="right-side-forget">
+                <a href="http://172.27.0.247:8080/pwm" class="for"
+                  >Forgot password...?</a
+                >
+              </div>
+            </div>
+            <div class="btnn">
+              <button type="submit">Login</button>
+            </div>
+          </form>
+          $(if error)<br />
+          <div style="color: #ff8080; font-size: 9px">$(error)</div>
+          $(endif)
+          <!--
+          <div class="w3layouts_more-buttn">
+            <h3>
+              Don't Have an account..?
+              <a href="#">Login Here </a>
+            </h3>
+          </div>-->
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      <!--
+      document.login.username.focus();
+      //-->
+    </script>
+    <!---728x90--->
+    <footer class="copyrigh-wthree">
+      <p>
+        © 2021 Office of Auditor General of the Federation (OAGF). All Rights
+        Reserved
+      </p>
+    </footer>
+  </body>
+</html>

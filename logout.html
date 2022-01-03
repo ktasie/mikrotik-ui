@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>OAGF Internet Portal :: Logout</title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Login Form Web Template" />
+    <script>
+      addEventListener(
+        'load',
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+    <!-- Meta tags -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//style sheet end here-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script language="JavaScript">
+      <!--
+      function openLogin() {
+        if (window.name != 'hotspot_logout') return true;
+        open('$(link-login)', '_blank', '');
+        window.close();
+        return false;
+      }
+      //-->
+    </script>
+    <!--<h1 class="error">OAGF Internet Portal</h1>-->
+    <!---728x90--->
+    <div
+      style="
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      "
+    >
+      <img src="images/coa.jpg" width="100px" />
+    </div>
+    <!---728x90--->
+    <div class="w3layouts-two-grids">
+      <div class="mid-class">
+        <div class="txt-left-side" style="flex-basis: 100%">
+          <b>you have just logged out</b> <br /><br />
+          <table class="tabula" border="1">
+            <tr>
+              <td align="right">user name</td>
+              <td>$(username)</td>
+            </tr>
+            <tr>
+              <td align="right">IP address</td>
+              <td>$(ip)</td>
+            </tr>
+            <tr>
+              <td align="right">MAC address</td>
+              <td>$(mac)</td>
+            </tr>
+            <tr>
+              <td align="right">session time</td>
+              <td>$(uptime)</td>
+            </tr>
+            $(if session-time-left)
+            <tr>
+              <td align="right">time left</td>
+              <td>$(session-time-left)</td>
+            </tr>
+            $(endif)
+            <tr>
+              <td align="right">bytes up/down:</td>
+              <td>$(bytes-in-nice) / $(bytes-out-nice)</td>
+            </tr>
+          </table>
+          <br />
+          <form
+            action="$(link-login)"
+            name="login"
+            onSubmit="return openLogin()"
+          >
+            <input type="submit" value="log in" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!---728x90--->
+    <footer class="copyrigh-wthree">
+      <p>
+        © 2021 Office of Auditor General of the Federation (OAGF). All Rights
+        Reserved
+      </p>
+    </footer>
+  </body>
+</html>
